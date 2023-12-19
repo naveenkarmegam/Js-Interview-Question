@@ -19,11 +19,11 @@ console.log(x); // 5
 
 
 // Example with let
-console.log(y); // ReferenceError: y is not defined
+// console.log(y); // ReferenceError: y is not defined
 let y = 10;
 
 // Example with const
-console.log(z); // ReferenceError: z is not defined
+// console.log(z); // ReferenceError: z is not defined
 const z = 15;
 
 //Variable hoisting applies to variables declared with var, but not to variables declared with let or const (introduced in ES6).
@@ -44,8 +44,19 @@ function sayHello() { //named fucntions
 
 
 // Function expression
-sayHi(); // TypeError: sayHi is not a function
+// sayHi(); // TypeError: sayHi is not a function
 var sayHi = function() {
   console.log("Hi!");
 };
 //Function expressions, however, are not hoisted in the same way as function declarations.
+
+// 3.Variable and Function Hoisting
+
+function example() {
+  console.log(a); // undefined
+  var a = 3;
+  console.log(a); // 3
+}
+example();
+
+// console.log(a) // reference error

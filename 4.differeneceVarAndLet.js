@@ -68,4 +68,19 @@ function example() {
   }
   
 //   console.log(localVar);  // ReferenceError: localVar is not defined
+
+
+//variable shadowing
+
+function test(){
+  var a = 'hello';
+  let b = 'bye'
+  if(true) {
+    let a = 'hi' // new memory allocate , so this can be varibale shadowing
+    // var b = 'good bye' //it will be ilegal showding // syntax error
+    console.log(a)
+  }
+  console.log(a)
+}
+test()
   
