@@ -8,8 +8,8 @@
 
 // two main aspect of hositings
 //1.variable hositing
-x = 5;
 console.log(x); // undefined
+x = 5;
 var x ;
 console.log(x); // 5
 

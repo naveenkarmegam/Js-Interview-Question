@@ -10,6 +10,14 @@
 // whenever create function inside anthoer function, the inner function is 
 // is closure , this closure will return outer function function variable.
 
+//A closure is the combination of a 
+//function bundled together (enclosed) 
+//with references to its surrounding state 
+//(the lexical environment). 
+//In other words, a closure gives you 
+//access to an outer function's scope from
+//an inner function.
+
 function outer(name){
     return function(){
         let str = 'Hey this is '

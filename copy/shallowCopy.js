@@ -14,7 +14,7 @@ console.log(arr1 === arr2)
 
 // In JavaScript, standard built-in object-copy operations (spread syntax, Array.prototype.concat(), 
 // Array.prototype.slice(), Array.from(), Object.assign(), and Object.create()) 
-// do not create deep copies (instead, they create shallow copies).
+// do not create deep copies (instead, they create shallow copies) in nested object or array.
 
 const ingredientsList = ["noodles", { list: ["eggs", "flour", "water"] }];
 
